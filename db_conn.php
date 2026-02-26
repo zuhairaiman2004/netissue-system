@@ -1,4 +1,9 @@
 <?php
+// Enable Error Reporting for Debugging
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // Fallbacks for local XAMPP environment
 $hostname = getenv('DB_HOST') ?: "localhost";
 $username = getenv('DB_USER') ?: "root";
