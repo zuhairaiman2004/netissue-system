@@ -62,7 +62,6 @@
             margin-bottom: 5px;
         }
 
-        /* Container Input yang Seragam */
         .input-group {
             background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -123,10 +122,16 @@
             box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.5);
         }
 
+        .register-section {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
         .footer-text {
             font-size: 0.75rem;
             color: rgba(255, 255, 255, 0.4);
-            margin-top: 30px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -163,6 +168,15 @@
                 Sign In <i class="bi bi-arrow-right ms-2"></i>
             </button>
         </form>
+
+        <div style="margin: 25px 0 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+            <p style="color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 8px;">
+                Belum ada akaun lagi?
+            </p>
+            <a href="register.php" class="btn btn-outline-info btn-sm w-100" style="border-radius: 12px; font-weight: 700; letter-spacing: 0.5px; transition: 0.3s;">
+                CREATE NEW ACCOUNT <i class="bi bi-person-plus ms-1"></i>
+            </a>
+        </div>
 
         <div class="footer-text">
             &copy; 2026 Diploma IT Networking Project<br>
