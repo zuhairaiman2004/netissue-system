@@ -53,8 +53,9 @@ INSERT INTO `issues` (`issue_id`, `user_id`, `category`, `description`, `status`
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
+  `email` varchar(100) DEFAULT NULL,
   `password` varchar(255) NOT NULL,
-  `role` enum('admin','user') DEFAULT 'user'
+  `role` enum('admin', 'user', 'staff') DEFAULT 'user'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
